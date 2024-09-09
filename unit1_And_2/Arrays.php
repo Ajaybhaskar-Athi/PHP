@@ -27,6 +27,7 @@ define("courses", [
   "HTML",
   "CSS"
 ]);
+
 echo courses[1]. "<br>";
 
 //declaring array as constant using genral way
