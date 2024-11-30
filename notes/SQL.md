@@ -1,4 +1,4 @@
-In PHP with MySQL, persistent and non-persistent (unpersistent) connections refer to the way a database connection is managed and reused.
+In PHP with MySQL, persistent and non-persistent (un persistent) connections refer to the way a database connection is managed and reused.
 
 ### 1. Non-Persistent (Standard) Connections
 A **non-persistent connection** (default in PHP) is created each time a script needs access to the database and is closed when the script finishes executing. This connection setup involves establishing a new database connection with each request.

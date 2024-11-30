@@ -81,8 +81,35 @@ foreach($arr as $ele=>$val){
     echo "$ele - $val <br>";
 }
 
-echo "Pop and shift in associated Array is same as normal One <br>";
 echo "________________**********************___________________________________<br><br>";
+
+function printt($arr){
+    foreach($arr as $ele=>$val){
+        echo "$ele - $val <br>";
+    }
+}
+
+$arr=array("19"=>"Ajay","2"=>"Bhaskar","3"=>"Akhaya");
+
+printt($arr);
+
+$arr["4"]="kushi";
+echo " <b>  After Pushing  at back: </b> <br>";
+printt($arr);
+
+array_pop($arr);
+echo "<b>After popping </b><br>";
+printt($arr);
+
+$new_pair=array("12"=>"pranav");
+$arr=$new_pair+$arr;
+echo "<b>After pushing at front</b> <br>";
+printt($arr);
+
+reset($arr);//points to the 1st element
+unset($arr[key($arr)]);
+echo "<b>After shifting  at front</b> <br>";
+printt($arr);
 
 
 ?>

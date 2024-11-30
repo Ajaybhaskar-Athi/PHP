@@ -17,7 +17,7 @@ if (!$conn) {
 $databasename = "Ajay";  // Database name
 $sql = "CREATE DATABASE IF NOT EXISTS $databasename";
 
-if (mysqli_query($conn, $sql)) {
+if (mysqli_query($conn, $sql)) { //2 parameters: connection and query
     echo "Database '$databasename' created successfully.<br>";
 } else {
     echo "Error creating database: " . mysqli_error($conn) . "<br>";

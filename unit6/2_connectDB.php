@@ -25,17 +25,18 @@ if (mysqli_query($conn, $table_sql)) {
 
 // Insert sample data into Employees table
 $data_sql = "INSERT INTO Employees2 (name, salary, department) VALUES
-    ('John Doe', 55000.00, 'Sales'),
-    ('Jane Smith', 70000.00, 'IT'),
-    ('Emily Brown', 45000.00, 'Sales'),
-    ('Chris Green', 80000.00, 'Marketing'),
-    ('Alice White', 52000.00, 'Sales'),
-    ('Mark Black', 60000.00, 'IT'),
-    ('Olivia Blue', 55000.00, 'Sales'),
-    ('Henry Red', 40000.00, 'HR'),
-    ('Sophia Gray', 75000.00, 'Marketing'),
-    ('Liam Gold', 52000.00, 'Sales'),
-    ('Emma Silver', 65000.00, 'IT')";
+    ('Michael Clark', 58000.00, 'Sales'),
+    ('Sara Johnson', 72000.00, 'IT'),
+    ('Daniel Wilson', 47000.00, 'Sales'),
+    ('Laura Adams', 83000.00, 'Marketing'),
+    ('Peter Brown', 51000.00, 'HR'),
+    ('Anna Taylor', 63000.00, 'IT'),
+    ('Samuel Lee', 54000.00, 'Sales'),
+    ('Grace Hall', 42000.00, 'HR'),
+    ('Ethan King', 76000.00, 'Marketing'),
+    ('Mia Scott', 53000.00, 'Sales'),
+    ('Ava Moore', 64000.00, 'IT')";
+
 
 if (mysqli_query($conn, $data_sql)) {
     echo "Sample data inserted successfully into 'Employees2' table.<br>";
